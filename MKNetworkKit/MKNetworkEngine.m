@@ -303,6 +303,11 @@ static NSOperationQueue *_sharedNetworkQueue;
   return ([self.reachability currentReachabilityStatus] != NotReachable);
 }
 
+-(NetworkStatus) currentNetworkStatus {
+  	
+	return [self.reachability currentReachabilityStatus];
+}
+
 #pragma mark -
 #pragma mark Create methods
 

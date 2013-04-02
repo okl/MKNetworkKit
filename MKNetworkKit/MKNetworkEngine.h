@@ -389,4 +389,12 @@
  */
 -(BOOL) isReachable;
 
+/*!
+ * @abstract Returns the current network connection status
+ *
+ * @discussion
+ * This method will indicate what type of connection (Wifi or WWAN or None) is currently available.
+ */
+-(NetworkStatus) currentNetworkStatus;
+
 @end
