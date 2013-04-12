@@ -25,6 +25,8 @@
 
 #import "UIImageView+MKNetworkKitAdditions.h"
 
+#import "MKNetworkEngine.h"
+
 #import <objc/runtime.h>
 
 static MKNetworkEngine *DefaultEngine;
@@ -82,7 +84,8 @@ const float kFreshLoadAnimationDuration = 0.35f;
                                             
                                             [UIView transitionWithView:self.superview
                                                               duration:isInCache?kFromCacheAnimationDuration:kFreshLoadAnimationDuration
-                                                               options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+                                                               options:UIViewAnimationOptionTransitionCrossDissolve | UIViewAnimationOptionAllowUserInteraction
+                                                            animations:^{
                                                                  self.image = fetchedImage;
                                                                } completion:nil];
                                             

@@ -59,13 +59,6 @@
 @property (assign, nonatomic) dispatch_queue_t operationQueue;
 #endif
 
--(void) saveCache;
--(void) saveCacheData:(NSData*) data forKey:(NSString*) cacheDataKey;
-
--(void) freezeOperations;
--(void) checkAndRestoreFrozenOperations;
-
--(BOOL) isCacheEnabled;
 @end
 
 static NSOperationQueue *_sharedNetworkQueue;
