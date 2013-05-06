@@ -92,7 +92,7 @@
 // on iOS (or any mobile device), 30 seconds is already considered high.
 
 //#define kMKNetworkKitRequestTimeOutInSeconds 30
-#define kMKNetworkKitRequestTimeOutInSeconds 15
+#define kMKNetworkKitRequestTimeOutInSeconds 30
 #endif
 
 
