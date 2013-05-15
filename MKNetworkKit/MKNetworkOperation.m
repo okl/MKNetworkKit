@@ -443,7 +443,7 @@ OSStatus extractIdentityAndTrust(CFDataRef inPKCS12Data,
 }
 
 -(void) dealloc {
-  [[NSURLCache sharedURLCache] removeCachedResponseForRequest:_request];
+//  [[NSURLCache sharedURLCache] removeCachedResponseForRequest:_request];
   [_connection cancel];
   _connection = nil;
 }
