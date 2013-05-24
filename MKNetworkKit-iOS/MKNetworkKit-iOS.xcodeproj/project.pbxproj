@@ -310,6 +310,7 @@
 				GCC_PREFIX_HEADER = "MKNetworkKit-iOS/MKNetworkKit-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -322,6 +323,7 @@
 				GCC_PREFIX_HEADER = "MKNetworkKit-iOS/MKNetworkKit-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
