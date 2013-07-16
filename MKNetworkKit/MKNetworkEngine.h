@@ -414,6 +414,17 @@
 -(BOOL) isReachable;
 
 /*!
+ * @abstract Returns the current network connection status
+ *  @abstract Boolean variable that states whether the request should automatically include an Accept-Language header.
+ *  @property shouldSendAcceptLanguageHeader
+ *
+ * @discussion
+ * This method will indicate what type of connection (Wifi or WWAN or None) is currently available.
+ *  @discussion
+*/
+-(NetworkStatus) currentNetworkStatus;
+
+/*!
  *  @abstract Boolean variable that states whether the request should automatically include an Accept-Language header.
  *  @property shouldSendAcceptLanguageHeader
  *
